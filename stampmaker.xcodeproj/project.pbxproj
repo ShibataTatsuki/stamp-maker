@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		011B30701D69671F001BE836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011B306F1D69671F001BE836 /* AppDelegate.swift */; };
+		011B30721D69671F001BE836 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011B30711D69671F001BE836 /* ViewController.swift */; };
+		011B30751D69671F001BE836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 011B30731D69671F001BE836 /* Main.storyboard */; };
+		011B30771D69671F001BE836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 011B30761D69671F001BE836 /* Assets.xcassets */; };
+		011B307A1D69671F001BE836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 011B30781D69671F001BE836 /* LaunchScreen.storyboard */; };
+		011B30851D696720001BE836 /* stampmakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011B30841D696720001BE836 /* stampmakerTests.swift */; };
+		011B30901D696720001BE836 /* stampmakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011B308F1D696720001BE836 /* stampmakerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		011B30811D696720001BE836 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 011B30641D69671F001BE836 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 011B306B1D69671F001BE836;
+			remoteInfo = stampmaker;
+		};
+		011B308C1D696720001BE836 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 011B30641D69671F001BE836 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 011B306B1D69671F001BE836;
+			remoteInfo = stampmaker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		011B306C1D69671F001BE836 /* stampmaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stampmaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		011B306F1D69671F001BE836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		011B30711D69671F001BE836 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		011B30741D69671F001BE836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		011B30761D69671F001BE836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		011B30791D69671F001BE836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		011B307B1D69671F001BE836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		011B30801D696720001BE836 /* stampmakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stampmakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		011B30841D696720001BE836 /* stampmakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stampmakerTests.swift; sourceTree = "<group>"; };
+		011B30861D696720001BE836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		011B308B1D696720001BE836 /* stampmakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stampmakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		011B308F1D696720001BE836 /* stampmakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stampmakerUITests.swift; sourceTree = "<group>"; };
+		011B30911D696720001BE836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		011B30691D69671F001BE836 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		011B307D1D696720001BE836 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		011B30881D696720001BE836 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		011B30631D69671F001BE836 = {
+			isa = PBXGroup;
+			children = (
+				011B306E1D69671F001BE836 /* stampmaker */,
+				011B30831D696720001BE836 /* stampmakerTests */,
+				011B308E1D696720001BE836 /* stampmakerUITests */,
+				011B306D1D69671F001BE836 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		011B306D1D69671F001BE836 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				011B306C1D69671F001BE836 /* stampmaker.app */,
+				011B30801D696720001BE836 /* stampmakerTests.xctest */,
+				011B308B1D696720001BE836 /* stampmakerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		011B306E1D69671F001BE836 /* stampmaker */ = {
+			isa = PBXGroup;
+			children = (
+				011B306F1D69671F001BE836 /* AppDelegate.swift */,
+				011B30711D69671F001BE836 /* ViewController.swift */,
+				011B30731D69671F001BE836 /* Main.storyboard */,
+				011B30761D69671F001BE836 /* Assets.xcassets */,
+				011B30781D69671F001BE836 /* LaunchScreen.storyboard */,
+				011B307B1D69671F001BE836 /* Info.plist */,
+			);
+			path = stampmaker;
+			sourceTree = "<group>";
+		};
+		011B30831D696720001BE836 /* stampmakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				011B30841D696720001BE836 /* stampmakerTests.swift */,
+				011B30861D696720001BE836 /* Info.plist */,
+			);
+			path = stampmakerTests;
+			sourceTree = "<group>";
+		};
+		011B308E1D696720001BE836 /* stampmakerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				011B308F1D696720001BE836 /* stampmakerUITests.swift */,
+				011B30911D696720001BE836 /* Info.plist */,
+			);
+			path = stampmakerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		011B306B1D69671F001BE836 /* stampmaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 011B30941D696720001BE836 /* Build configuration list for PBXNativeTarget "stampmaker" */;
+			buildPhases = (
+				011B30681D69671F001BE836 /* Sources */,
+				011B30691D69671F001BE836 /* Frameworks */,
+				011B306A1D69671F001BE836 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = stampmaker;
+			productName = stampmaker;
+			productReference = 011B306C1D69671F001BE836 /* stampmaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		011B307F1D696720001BE836 /* stampmakerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 011B30971D696720001BE836 /* Build configuration list for PBXNativeTarget "stampmakerTests" */;
+			buildPhases = (
+				011B307C1D696720001BE836 /* Sources */,
+				011B307D1D696720001BE836 /* Frameworks */,
+				011B307E1D696720001BE836 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				011B30821D696720001BE836 /* PBXTargetDependency */,
+			);
+			name = stampmakerTests;
+			productName = stampmakerTests;
+			productReference = 011B30801D696720001BE836 /* stampmakerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		011B308A1D696720001BE836 /* stampmakerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 011B309A1D696720001BE836 /* Build configuration list for PBXNativeTarget "stampmakerUITests" */;
+			buildPhases = (
+				011B30871D696720001BE836 /* Sources */,
+				011B30881D696720001BE836 /* Frameworks */,
+				011B30891D696720001BE836 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				011B308D1D696720001BE836 /* PBXTargetDependency */,
+			);
+			name = stampmakerUITests;
+			productName = stampmakerUITests;
+			productReference = 011B308B1D696720001BE836 /* stampmakerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		011B30641D69671F001BE836 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "柴田　樹希";
+				TargetAttributes = {
+					011B306B1D69671F001BE836 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					011B307F1D696720001BE836 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 011B306B1D69671F001BE836;
+					};
+					011B308A1D696720001BE836 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 011B306B1D69671F001BE836;
+					};
+				};
+			};
+			buildConfigurationList = 011B30671D69671F001BE836 /* Build configuration list for PBXProject "stampmaker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 011B30631D69671F001BE836;
+			productRefGroup = 011B306D1D69671F001BE836 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				011B306B1D69671F001BE836 /* stampmaker */,
+				011B307F1D696720001BE836 /* stampmakerTests */,
+				011B308A1D696720001BE836 /* stampmakerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		011B306A1D69671F001BE836 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011B307A1D69671F001BE836 /* LaunchScreen.storyboard in Resources */,
+				011B30771D69671F001BE836 /* Assets.xcassets in Resources */,
+				011B30751D69671F001BE836 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		011B307E1D696720001BE836 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		011B30891D696720001BE836 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		011B30681D69671F001BE836 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011B30721D69671F001BE836 /* ViewController.swift in Sources */,
+				011B30701D69671F001BE836 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		011B307C1D696720001BE836 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011B30851D696720001BE836 /* stampmakerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		011B30871D696720001BE836 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011B30901D696720001BE836 /* stampmakerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		011B30821D696720001BE836 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 011B306B1D69671F001BE836 /* stampmaker */;
+			targetProxy = 011B30811D696720001BE836 /* PBXContainerItemProxy */;
+		};
+		011B308D1D696720001BE836 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 011B306B1D69671F001BE836 /* stampmaker */;
+			targetProxy = 011B308C1D696720001BE836 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		011B30731D69671F001BE836 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				011B30741D69671F001BE836 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		011B30781D69671F001BE836 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				011B30791D69671F001BE836 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		011B30921D696720001BE836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		011B30931D696720001BE836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		011B30951D696720001BE836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = stampmaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.stampmaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		011B30961D696720001BE836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = stampmaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.stampmaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		011B30981D696720001BE836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = stampmakerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.stampmakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/stampmaker.app/stampmaker";
+			};
+			name = Debug;
+		};
+		011B30991D696720001BE836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = stampmakerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.stampmakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/stampmaker.app/stampmaker";
+			};
+			name = Release;
+		};
+		011B309B1D696720001BE836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = stampmakerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.stampmakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = stampmaker;
+			};
+			name = Debug;
+		};
+		011B309C1D696720001BE836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = stampmakerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.stampmakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = stampmaker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		011B30671D69671F001BE836 /* Build configuration list for PBXProject "stampmaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				011B30921D696720001BE836 /* Debug */,
+				011B30931D696720001BE836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		011B30941D696720001BE836 /* Build configuration list for PBXNativeTarget "stampmaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				011B30951D696720001BE836 /* Debug */,
+				011B30961D696720001BE836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		011B30971D696720001BE836 /* Build configuration list for PBXNativeTarget "stampmakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				011B30981D696720001BE836 /* Debug */,
+				011B30991D696720001BE836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		011B309A1D696720001BE836 /* Build configuration list for PBXNativeTarget "stampmakerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				011B309B1D696720001BE836 /* Debug */,
+				011B309C1D696720001BE836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 011B30641D69671F001BE836 /* Project object */;
+}
