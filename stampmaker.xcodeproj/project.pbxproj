@@ -14,6 +14,13 @@
 		011B307A1D69671F001BE836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 011B30781D69671F001BE836 /* LaunchScreen.storyboard */; };
 		011B30851D696720001BE836 /* stampmakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011B30841D696720001BE836 /* stampmakerTests.swift */; };
 		011B30901D696720001BE836 /* stampmakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011B308F1D696720001BE836 /* stampmakerUITests.swift */; };
+		011B309E1D696EB3001BE836 /* makeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011B309D1D696EB3001BE836 /* makeViewController.swift */; };
+		018CBCA01D69900A00D62ADB /* IMG_5168.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 018CBC9F1D69900A00D62ADB /* IMG_5168.JPG */; };
+		0197CA991D6AAF99004AC02F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0197CA941D6AAF99004AC02F /* Default-568h@2x.png */; };
+		0197CA9A1D6AAF99004AC02F /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0197CA951D6AAF99004AC02F /* Default-667h@2x.png */; };
+		0197CA9B1D6AAF99004AC02F /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0197CA961D6AAF99004AC02F /* Default-736h@3x.png */; };
+		0197CA9C1D6AAF99004AC02F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0197CA971D6AAF99004AC02F /* Default.png */; };
+		0197CA9D1D6AAF99004AC02F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0197CA981D6AAF99004AC02F /* Default@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		011B308B1D696720001BE836 /* stampmakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stampmakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		011B308F1D696720001BE836 /* stampmakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stampmakerUITests.swift; sourceTree = "<group>"; };
 		011B30911D696720001BE836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		011B309D1D696EB3001BE836 /* makeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = makeViewController.swift; path = ../makeViewController.swift; sourceTree = "<group>"; };
+		018CBC9F1D69900A00D62ADB /* IMG_5168.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_5168.JPG; sourceTree = "<group>"; };
+		0197CA941D6AAF99004AC02F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0197CA951D6AAF99004AC02F /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		0197CA961D6AAF99004AC02F /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
+		0197CA971D6AAF99004AC02F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0197CA981D6AAF99004AC02F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +111,13 @@
 		011B306E1D69671F001BE836 /* stampmaker */ = {
 			isa = PBXGroup;
 			children = (
+				0197CA931D6AAF99004AC02F /* Defaults */,
 				011B306F1D69671F001BE836 /* AppDelegate.swift */,
 				011B30711D69671F001BE836 /* ViewController.swift */,
+				011B309D1D696EB3001BE836 /* makeViewController.swift */,
 				011B30731D69671F001BE836 /* Main.storyboard */,
 				011B30761D69671F001BE836 /* Assets.xcassets */,
+				018CBC9F1D69900A00D62ADB /* IMG_5168.JPG */,
 				011B30781D69671F001BE836 /* LaunchScreen.storyboard */,
 				011B307B1D69671F001BE836 /* Info.plist */,
 			);
@@ -123,6 +140,18 @@
 				011B30911D696720001BE836 /* Info.plist */,
 			);
 			path = stampmakerUITests;
+			sourceTree = "<group>";
+		};
+		0197CA931D6AAF99004AC02F /* Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				0197CA941D6AAF99004AC02F /* Default-568h@2x.png */,
+				0197CA951D6AAF99004AC02F /* Default-667h@2x.png */,
+				0197CA961D6AAF99004AC02F /* Default-736h@3x.png */,
+				0197CA971D6AAF99004AC02F /* Default.png */,
+				0197CA981D6AAF99004AC02F /* Default@2x.png */,
+			);
+			path = Defaults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,8 +259,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				011B307A1D69671F001BE836 /* LaunchScreen.storyboard in Resources */,
+				0197CA9A1D6AAF99004AC02F /* Default-667h@2x.png in Resources */,
 				011B30771D69671F001BE836 /* Assets.xcassets in Resources */,
+				0197CA9D1D6AAF99004AC02F /* Default@2x.png in Resources */,
+				0197CA9C1D6AAF99004AC02F /* Default.png in Resources */,
 				011B30751D69671F001BE836 /* Main.storyboard in Resources */,
+				0197CA991D6AAF99004AC02F /* Default-568h@2x.png in Resources */,
+				018CBCA01D69900A00D62ADB /* IMG_5168.JPG in Resources */,
+				0197CA9B1D6AAF99004AC02F /* Default-736h@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				011B309E1D696EB3001BE836 /* makeViewController.swift in Sources */,
 				011B30721D69671F001BE836 /* ViewController.swift in Sources */,
 				011B30701D69671F001BE836 /* AppDelegate.swift in Sources */,
 			);
@@ -482,6 +518,7 @@
 				011B30961D696720001BE836 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		011B30971D696720001BE836 /* Build configuration list for PBXNativeTarget "stampmakerTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +527,7 @@
 				011B30991D696720001BE836 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		011B309A1D696720001BE836 /* Build configuration list for PBXNativeTarget "stampmakerUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +536,7 @@
 				011B309C1D696720001BE836 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
