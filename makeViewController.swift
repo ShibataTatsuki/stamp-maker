@@ -37,12 +37,17 @@ class makeViewController: UIViewController ,UIImagePickerControllerDelegate,UINa
     @IBOutlet var Label: UILabel!
     var faceOutlineArray: [UIView] = []
     var stampIndex: Int = 0
+    var labelArray: [UILabel] = []
+    
+    let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    //AppDelegateのインスタンスを取得_
     
     override func viewDidLoad() {
         super.viewDidLoad()
         myImageView.userInteractionEnabled = true
-
-        Label.text = "写真を選択してください！"
+        
+        Label.text = "Please deside your picture!"
+        Label.textColor = UIColor.blueColor()
     }
     
     func presentPickerController(sourceType:UIImagePickerControllerSourceType){
@@ -68,6 +73,7 @@ class makeViewController: UIViewController ,UIImagePickerControllerDelegate,UINa
     
     
     @IBAction func picture(sender: UIButton){
+        
         
         let alertController = UIAlertController(title: "画像の取得先を選択", message: nil, preferredStyle: .ActionSheet)
         let firstAction = UIAlertAction(title: "カメラ", style: .Default){
@@ -137,11 +143,13 @@ class makeViewController: UIViewController ,UIImagePickerControllerDelegate,UINa
             let panGesture = UIPanGestureRecognizer(target: self, action: Selector("drag:"))
             faceOutline.addGestureRecognizer(panGesture)
             
+            let tapGesture = UITapGestureRecognizer(target: self, action: Selector("tap:"))
+            faceOutline.addGestureRecognizer(tapGesture)
             faceOutlineArray.append(faceOutline)
             myImageView.addSubview(faceOutline)
             
         }
-
+        
     }
     func changeScale(gesture:UIPinchGestureRecognizer){
         gesture.view?.transform = CGAffineTransformMakeScale(gesture.scale, gesture.scale)
@@ -151,9 +159,17 @@ class makeViewController: UIViewController ,UIImagePickerControllerDelegate,UINa
         var point: CGPoint = gesture.translationInView(self.view)
         var movedPoint: CGPoint = CGPointMake(gesture.view!.center.x + point.x,gesture.view!.center.y + point.y)
         //if movedPoint.x >= 0 && movedPoint.y >= 0 && movedPoint.x <= myImageView.frame.width && movedPoint.y <= myImageView.frame.height{
-            gesture.view!.center = movedPoint
-      //  }
+        gesture.view!.center = movedPoint
+        //  }
         gesture.setTranslation(CGPointZero, inView: self.view)
+    }
+    func tap(gesture:UIPinchGestureRecognizer){
+        myImageView.image = cropImageToSquare(myImageView.image!, faceLine: gesture.view!)
+        let subviews = myImageView.subviews
+        for subview in subviews {
+            subview.removeFromSuperview()
+        }
+
     }
     @IBAction func back(){
         if faceOutlineArray.count > 0{
@@ -162,24 +178,11 @@ class makeViewController: UIViewController ,UIImagePickerControllerDelegate,UINa
         }
     }
     
-    
-    @IBAction func cut (){
-        self.cropImageToSquare(myImageView.image!)
-    }
-    func cropImageToSquare(image: UIImage) -> UIImage? {
-        if image.size.width > image.size.height {
-            // 横長
-            let cropCGImageRef = CGImageCreateWithImageInRect(image.CGImage, CGRectMake(image.size.width/2 - image.size.height/2, 0, image.size.height, image.size.height))
-            
-            return UIImage(CGImage: cropCGImageRef!)
-        } else if image.size.width < image.size.height {
-            // 縦長
-            let cropCGImageRef = CGImageCreateWithImageInRect(image.CGImage, CGRectMake(0, 0, image.size.width, image.size.width))
-            
-            return UIImage(CGImage: cropCGImageRef!)
-        } else {
-            return image
-        }
+    func cropImageToSquare(image: UIImage, faceLine: UIView) -> UIImage? {
+        
+        let cropCGImageRef = CGImageCreateWithImageInRect(image.CGImage, faceLine.frame)
+        
+        return UIImage(CGImage: cropCGImageRef!)
     }
     func simpleAlert(titleString: String){
         let alertController = UIAlertController(title: titleString, message: nil, preferredStyle: .Alert)
@@ -196,12 +199,29 @@ class makeViewController: UIViewController ,UIImagePickerControllerDelegate,UINa
         myComposeView.addImage(myImageView.image)
         self.presentViewController(myComposeView, animated: true, completion: nil)
     }
+    func drawMaskLabel(label: UILabel)->UIImage{
+        UIGraphicsBeginImageContextWithOptions(myImageView.frame.size, false, UIScreen.mainScreen().scale)
+        myImageView.addSubview(label)
+        if let context = UIGraphicsGetCurrentContext() {
+            myImageView.layer.renderInContext(context)
+        }
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage
+    }
+
+    @IBAction func number1(){
+        stampIndex = 1
+    }
+
     @IBAction func uploadButtonTapped(sender: UIButton){
         guard let selectedPhoto = myImageView.image else{
             simpleAlert("画像がありません")
             return
         }
-        
+        for label in self.labelArray {
+            self.myImageView.image = self.drawMaskLabel(label)
+        }
         let alertController = UIAlertController(title: "アップロード先を選択", message: nil, preferredStyle: .ActionSheet)
         let firstAction = UIAlertAction(title: "Facebookに投稿", style: .Default){
             action in
@@ -227,7 +247,7 @@ class makeViewController: UIViewController ,UIImagePickerControllerDelegate,UINa
         presentViewController(alertController, animated: true, completion: nil)
     }
     
-    func drawMaskLabel(label: UILabel)->UIImage{
+    func draw2MaskLabel(label: UILabel)->UIImage{
         UIGraphicsBeginImageContextWithOptions(myImageView.frame.size, false, UIScreen.mainScreen().scale)
         myImageView.addSubview(label)
         if let context = UIGraphicsGetCurrentContext() {
@@ -238,9 +258,41 @@ class makeViewController: UIViewController ,UIImagePickerControllerDelegate,UINa
         return newImage
         
     }
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        
+        let touch: UITouch = touches.first!
+        let location: CGPoint = touch.locationInView(self.myImageView)
+        
+        if stampIndex != 0 && touch.view!.tag == 0 && location.y <= myImageView.frame.maxY{
+            let label = UILabel(frame: CGRectMake(0, 0, 150, 50))
+            label.textAlignment = .Center
+            label.text = appDelegate.mytext
+            label.textColor = UIColor.redColor()
+            //label.backgroundColor = UIColor.blueColor()
+            label.center = CGPointMake(location.x, location.y)
+            label.userInteractionEnabled = true
+            label.tag = 1
+            //ジェスチャーを宣言
+            let pinchGesture = UIPinchGestureRecognizer(target: self, action: Selector("changeScale:"))
+            label.addGestureRecognizer(pinchGesture)
+            
+            let panGesture = UIPanGestureRecognizer(target: self, action: Selector("drag:"))
+            label.addGestureRecognizer(panGesture)
+            
+            labelArray.append(label)
+            self.view.addSubview(label)
+
+        }
+    }
+//    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+//        
+//        let touch: UITouch = touches.first!
+//        let location: CGPoint = touch.locationInView(self.myImageView)
+//        faceOutline.layer.borderColor = UIColor.blueColor()().CGColor
+//                }
     
-    
-    override func didReceiveMemoryWarning() {
+
+        override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }

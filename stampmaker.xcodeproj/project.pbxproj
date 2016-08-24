@@ -21,6 +21,8 @@
 		0197CA9B1D6AAF99004AC02F /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0197CA961D6AAF99004AC02F /* Default-736h@3x.png */; };
 		0197CA9C1D6AAF99004AC02F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0197CA971D6AAF99004AC02F /* Default.png */; };
 		0197CA9D1D6AAF99004AC02F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0197CA981D6AAF99004AC02F /* Default@2x.png */; };
+		01E55F171D6D2B95002D319B /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 01E55F161D6D2B95002D319B /* camera.png */; };
+		01E55F191D6D8704002D319B /* stampViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E55F181D6D8704002D319B /* stampViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		0197CA961D6AAF99004AC02F /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
 		0197CA971D6AAF99004AC02F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		0197CA981D6AAF99004AC02F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		01E55F161D6D2B95002D319B /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		01E55F181D6D8704002D319B /* stampViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stampViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +119,11 @@
 				011B306F1D69671F001BE836 /* AppDelegate.swift */,
 				011B30711D69671F001BE836 /* ViewController.swift */,
 				011B309D1D696EB3001BE836 /* makeViewController.swift */,
+				01E55F181D6D8704002D319B /* stampViewController.swift */,
 				011B30731D69671F001BE836 /* Main.storyboard */,
 				011B30761D69671F001BE836 /* Assets.xcassets */,
 				018CBC9F1D69900A00D62ADB /* IMG_5168.JPG */,
+				01E55F161D6D2B95002D319B /* camera.png */,
 				011B30781D69671F001BE836 /* LaunchScreen.storyboard */,
 				011B307B1D69671F001BE836 /* Info.plist */,
 			);
@@ -262,6 +268,7 @@
 				0197CA9A1D6AAF99004AC02F /* Default-667h@2x.png in Resources */,
 				011B30771D69671F001BE836 /* Assets.xcassets in Resources */,
 				0197CA9D1D6AAF99004AC02F /* Default@2x.png in Resources */,
+				01E55F171D6D2B95002D319B /* camera.png in Resources */,
 				0197CA9C1D6AAF99004AC02F /* Default.png in Resources */,
 				011B30751D69671F001BE836 /* Main.storyboard in Resources */,
 				0197CA991D6AAF99004AC02F /* Default-568h@2x.png in Resources */,
@@ -291,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01E55F191D6D8704002D319B /* stampViewController.swift in Sources */,
 				011B309E1D696EB3001BE836 /* makeViewController.swift in Sources */,
 				011B30721D69671F001BE836 /* ViewController.swift in Sources */,
 				011B30701D69671F001BE836 /* AppDelegate.swift in Sources */,
